@@ -48,7 +48,7 @@ class Turtle:
 
         if self.x >= 8 and self.vx > 0:
             count += 1
-            if count < 16:
+            if count <= 16:
                 vels[count][0] = -self.vx
                 vels[count][1] = -self.vy
                 turtles[count] = Turtle(count, self.x - 0.1, self.y, -self.vx, -self.vy)
